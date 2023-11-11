@@ -1,19 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeroSoftware</title>
 
-    <title>ZeroSoftware</title>
+  <!-- Links al directorio de animaciones -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+  <!-- Links Locales -->
+  <link rel="stylesheet" href="../CSS/planos.css">
+  <link rel="icon" href="../Assets/icons/image.ico">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="icon" href="/Assets/icons/image.ico">
+  <style>
+    /* Estilos de la barra de navegación */
+    .navbar {
+      transition: top 0.5s, opacity 0.5s; /* Añade una transición suave de 0.5 segundos */
+    }
 
+    .navbar.hidden {
+      top: -56px; /* Mueve la barra de navegación completamente fuera de la vista */
+      opacity: 0; /* Hace que la barra de navegación sea completamente transparente cuando está oculta */
+    }
+  </style>
 </head>
 <body>
-    
-    
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        
+      <!-- Logo y nombre de la empresa -->
+      <a class="navbar-brand animated-title" href="../index.html">
+        <img src="../Assets/images/image.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        ZeroSoftware
+      </a>
+
+      <!-- Subtítulo -->
+      <p class="navbar-subtitle animated-subtitle">Planos 3D</p>
+
+      <!-- Enlaces en la derecha -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ubicacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Integrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+
+          <!-- Enlaces desplegables -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Navigation List
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Actividades</a>
+              <a class="dropdown-item" href="#">Sectores</a>
+              <a class="dropdown-item" href="#">Ciclo de Vida</a>
+              <a class="dropdown-item" href="#">Diccionario de Datos</a>
+              <a class="dropdown-item" href="#">DFDs</a>
+              <a class="dropdown-item" href="#">Distribucion del Trabajo</a>
+              <a class="dropdown-item" href="#">Cursogramas</a>
+              <a class="dropdown-item" href="#">Seguridad</a>
+              <a class="dropdown-item" href="#">Pantallas / Formularios</a>
+              <a class="dropdown-item" href="#">Costos</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido de la página -->
+  <div class="container mt-5">
+
+    <!-- Sección 1 -->
+    <section class="row align-items-center">
+      <div class="col-md-6">
+        <div class="text-left">
+          <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+          <h3><span style="color: #9575CD;">P</span>lanos <span style="color: #9575CD;">3</span>D</h3>
+          <p>En la planta baja encontrarás nuestra recepción, diseñada para ofrecer una bienvenida cálida y profesional. Además, las oficinas de atención al cliente están estratégicamente ubicadas aquí, brindando un espacio accesible para resolver tus consultas y proporcionar asistencia personalizada.</p>
+          <p>Las plantas superiores de nuestro edificio son el corazón de la innovación y la creatividad. Aquí es donde florece el desarrollo de proyectos, con espacios dedicados a equipos multidisciplinarios. </p>
+          <p>La tercera planta alberga nuestras oficinas administrativas, donde se lleva a cabo la gestión estratégica de proyectos y recursos. Aquí, los equipos de administración trabajan incansablemente para garantizar el éxito y la eficiencia en todas las etapas de nuestros proyectos. Además, encontrarás espacios dedicados a la planificación y coordinación, asegurando una ejecución fluida y una administración efectiva.</p>
+          <a href="https://home.by.me/es/project/munoz.damianalejandro-3128/zero-software">
+            <p style="font-weight: bold; color: #9575CD;">Descubre más sobre nuestras instalaciones y servicios.</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <img src="../Assets/images/section2.gif" alt="Image Not Found" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Carrusel de Imágenes -->
+    <div id="imageCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Assets/planos/muebles/PlantaBaja_muebles.jpeg" class="d-block w-100" alt="Primera Imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="../Assets/planos/muebles/PrimerPiso_muebles.jpeg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="../Assets/planos/muebles/SegundoPiso_muebles.jpeg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../Assets/planos/muebles/TercerPiso_muebles.jpeg" class="d-block w-100" alt="Segunda Imagen">
+          </div>
+        </div>
+        <!-- Controles del carrusel -->
+        <a class="carousel-control-prev" href="#imageCarousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+      <!-- Carrusel de Imágenes -->
+      <div id="imageCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="../Assets/planos/habitaciones/PlantaBaja_habitaciones.jpeg" class="d-block w-100" alt="Primera Imagen">
+          </div>
+          <div class="carousel-item">
+              <img src="../Assets/planos/habitaciones/PrimerPiso_habitaciones.jpeg" class="d-block w-100" alt="Segunda Imagen">
+          </div>
+          <div class="carousel-item">
+              <img src="../Assets/planos/habitaciones/SegundoPiso_habitaciones.jpeg" class="d-block w-100" alt="Segunda Imagen">
+          </div>
+          <div class="carousel-item">
+            <img src="../Assets/planos/habitaciones/TercerPiso_habitaciones.jpeg" class="d-block w-100" alt="Segunda Imagen">
+        </div>
+      </div>
+      <!-- Controles del carrusel -->
+      <a class="carousel-control-prev" href="#imageCarousel2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#imageCarousel2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+
+    <!-- Carrusel de Imágenes -->
+    <div id="imageCarousel3" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="../Assets/planos/medidas/PlantaBaja_medidas.jpeg" class="d-block w-100" alt="Primera Imagen">
+          </div>
+          <div class="carousel-item">
+              <img src="../Assets/planos/medidas/PrimerPiso_medidas.jpeg" class="d-block w-100" alt="Segunda Imagen">
+          </div>
+          <div class="carousel-item">
+              <img src="../Assets/planos/medidas/SegundoPiso_medidas.jpeg" class="d-block w-100" alt="Segunda Imagen">
+          </div>
+          <div class="carousel-item">
+            <img src="../Assets/planos/medidas/TercerPiso_medidas.jpeg" class="d-block w-100" alt="Segunda Imagen">
+        </div>
+      </div>
+      <!-- Controles del carrusel -->
+      <a class="carousel-control-prev" href="#imageCarousel3" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#imageCarousel3" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Links a los directorios de Boostrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script para ocultar/mostrar la barra de navegación -->
+  <script src="../JS/navbar.js"></script>
 
 </body>
 </html>
