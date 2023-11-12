@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ZeroSoftware</title>
+
+  <!-- Links al directorio de animaciones -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+  <!-- Links Locales -->
+  <link rel="stylesheet" href="../CSS/tablaDatos.css">
+  <link rel="icon" href="../Assets/icons/image.ico">
+
+  <style>
+    /* Estilos de la barra de navegación */
+    .navbar {
+      transition: top 0.5s, opacity 0.5s; /* Añade una transición suave de 0.5 segundos */
+    }
+
+    .navbar.hidden {
+      top: -56px; /* Mueve la barra de navegación completamente fuera de la vista */
+      opacity: 0; /* Hace que la barra de navegación sea completamente transparente cuando está oculta */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        
+      <!-- Logo y nombre de la empresa -->
+      <a class="navbar-brand animated-title" href="../index.html">
+        <img src="../Assets/images/image.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        ZeroSoftware
+      </a>
+
+      <!-- Subtítulo -->
+      <p class="navbar-subtitle animated-subtitle">Diccionario de Datos</p>
+
+      <!-- Enlaces en la derecha -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/maps?q=latitude,longitude" target="_blank">Ubicacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="integrantes.html">Integrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:damzerotec@gmail.com" target="_blank">Contacto</a>
+          </li>
+
+          <!-- Enlaces desplegables -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Navigation List
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="planos.html">Planos 3D</a>
+              <a class="dropdown-item" href="#">Actividades</a>
+              <a class="dropdown-item" href="#">Sectores</a>
+              <a class="dropdown-item" href="#">Ciclo de Vida</a>
+              <a class="dropdown-item" href="#">DFDs</a>
+              <a class="dropdown-item" href="#">Distribucion del Trabajo</a>
+              <a class="dropdown-item" href="#">Cursogramas</a>
+              <a class="dropdown-item" href="#">Seguridad</a>
+              <a class="dropdown-item" href="#">Pantallas / Formularios</a>
+              <a class="dropdown-item" href="#">Costos</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Contenido de la página 1 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Proyectos en Proceso -->
+  <h2 class="mt-4 mb-4">Proyectos en Proceso</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>idProyecto</td>
+        <td>Identificador único del proyecto</td>
+      </tr>
+      <tr>
+        <td>nombrePrototipo</td>
+        <td>Nombre del prototipo del proyecto</td>
+      </tr>
+      <tr>
+        <td>fechaInicio</td>
+        <td>Fecha de inicio del proyecto</td>
+      </tr>
+      <tr>
+        <td>ultimaModificacion</td>
+        <td>Fecha de la última modificación del proyecto</td>
+      </tr>
+      <tr>
+        <td>fechaFinalizacion</td>
+        <td>Fecha de finalización del proyecto</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- Contenido de la página 2 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Feedback -->
+<h2 class="mt-4 mb-4">Feedback</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Campo</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>idProyecto</td>
+      <td>Identificador único del proyecto</td>
+    </tr>
+    <tr>
+      <td>idFeedback</td>
+      <td>Identificador único de Feedback</td>
+    </tr>
+    <tr>
+      <td>fecha</td>
+      <td>Fecha del comentario</td>
+    </tr>
+    <tr>
+      <td>descripcion</td>
+      <td>Descripción del comentario</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<!-- Contenido de la página 3 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Proyecto Finalizado -->
+  <h2 class="mt-4 mb-4">Producto Finalizado</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>idProyecto</td>
+        <td>Identificador único del proyecto</td>
+      </tr>
+      <tr>
+        <td>IdProducto</td>
+        <td>Identificador único de producto</td>
+      </tr>
+      <tr>
+        <td>nombreProyecto</td>
+        <td>Nombre del proyecto</td>
+      </tr>
+      <tr>
+        <td>cliente</td>
+        <td>Nombre del cliente</td>
+      </tr>
+      <tr>
+        <td>fechaFinalizacion</td>
+        <td>Fecha de finalización del proyecto</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- Contenido de la página 4 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Datos Cliente -->
+  <h2 class="mt-4 mb-4">Datos Cliente</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre del Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>idCliente</td>
+        <td>Identificador único del cliente</td>
+      </tr>
+      <tr>
+        <td>nombreCliente</td>
+        <td>Nombre completo del cliente</td>
+      </tr>
+      <tr>
+        <td>direccion</td>
+        <td>Dirección del cliente</td>
+      </tr>
+      <tr>
+        <td>telefono</td>
+        <td>Número de teléfono del cliente</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>Dirección de correo electrónico del cliente</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- Contenido de la página 5 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Compras Cliente -->
+  <h2 class="mt-4 mb-4">Compras Cliente</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre del Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>idCliente</td>
+        <td>Identificador único del cliente</td>
+      </tr>
+      <tr>
+        <td>idCompra</td>
+        <td>Identificador único de la compra</td>
+      </tr>
+      <tr>
+        <td>descripcion</td>
+        <td>Información del ticket</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- Contenido de la página 6 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Planes BD -->
+  <h2 class="mt-4 mb-4">Planes BD</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre del Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>idPlan</td>
+        <td>Identificador único del plan</td>
+      </tr>
+      <tr>
+        <td>nombrePlan</td>
+        <td>Nombre del plan</td>
+      </tr>
+      <tr>
+        <td>costo</td>
+        <td>Costo del plan de soporte</td>
+      </tr>
+      <tr>
+        <td>fechaInicio</td>
+        <td>Fecha de inicio del plan de soporte</td>
+      </tr>
+      <tr>
+        <td>fechaFin</td>
+        <td>Fecha de finalización del plan de soporte</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+  <!-- Contenido de la página 7 -->
+<div class="container mt-5">
+
+  <!-- Tabla de ProdDF Cliente -->
+  <h2 class="mt-4 mb-4">ProdDF Cliente</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>idProducto</td>
+        <td>Identificador único del producto</td>
+      </tr>
+      <tr>
+        <td>idCliente</td>
+        <td>Identificador único del cliente</td>
+      </tr>
+      <tr>
+        <td>descripcionProducto</td>
+        <td>Descripción del producto</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+  <!-- Contenido de la página 8 -->
+<div class="container mt-5">
+
+      <!-- Tabla de BD Hardware -->
+  <h2 class="mt-4 mb-4">BD Hardware</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>id_mantenimiento</td>
+        <td>Identificador único del registro de mantenimiento</td>
+      </tr>
+      <tr>
+        <td>fecha_solicitud</td>
+        <td>Fecha en que se realizó la solicitud de mantenimiento</td>
+      </tr>
+      <tr>
+        <td>descripcion_problema</td>
+        <td>Descripción del problema con el dispositivo</td>
+      </tr>
+      <tr>
+        <td>fecha_inicio_mantenimiento</td>
+        <td>Fecha en que se inició el mantenimiento del dispositivo</td>
+      </tr>
+      <tr>
+        <td>fecha_fin_mantenimiento</td>
+        <td>Fecha en que se finalizó el mantenimiento del dispositivo</td>
+      </tr>
+      <tr>
+        <td>descripcion_solucion</td>
+        <td>Descripción de la solución al problema con el dispositivo</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+  <!-- Contenido de la página 9 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Stock de Recursos -->
+  <h2 class="mt-4 mb-4">Stock de Recursos</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>id_recurso</td>
+        <td>Identificador único del recurso</td>
+      </tr>
+      <tr>
+        <td>nombre</td>
+        <td>Nombre del recurso</td>
+      </tr>
+      <tr>
+        <td>descripcion</td>
+        <td>Descripción del recurso</td>
+      </tr>
+      <tr>
+        <td>cantidad</td>
+        <td>Cantidad de recursos disponibles</td>
+      </tr>
+      <tr>
+        <td>ubicacion</td>
+        <td>Ubicación del recurso</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+  <!-- Contenido de la página 10 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Registro de Capital -->
+  <h2 class="mt-4 mb-4">Registro de Capital</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>id_registro_capital</td>
+        <td>Identificador único del registro de capital</td>
+      </tr>
+      <tr>
+        <td>fecha</td>
+        <td>Fecha en que se realizó el registro de capital</td>
+      </tr>
+      <tr>
+        <td>tipo_capital</td>
+        <td>Tipo de capital</td>
+      </tr>
+      <tr>
+        <td>cantidad</td>
+        <td>Cantidad de capital registrado</td>
+      </tr>
+      <tr>
+        <td>origen</td>
+        <td>Origen del capital registrado</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+  <!-- Contenido de la página 11 -->
+<div class="container mt-5">
+
+<!-- Tabla de Registro de Aspirantes -->
+<h2 class="mt-4 mb-4">Registro de Aspirantes</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Campo</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id_aspirante</td>
+      <td>Identificador único del aspirante</td>
+    </tr>
+    <tr>
+      <td>nombre</td>
+      <td>Nombre del aspirante</td>
+    </tr>
+    <tr>
+      <td>apellido</td>
+      <td>Apellido del aspirante</td>
+    </tr>
+    <tr>
+      <td>fecha_nacimiento</td>
+      <td>Fecha de nacimiento del aspirante</td>
+    </tr>
+    <tr>
+      <td>direccion</td>
+      <td>Dirección del aspirante</td>
+    </tr>
+    <tr>
+      <td>telefono</td>
+      <td>Teléfono del aspirante</td>
+    </tr>
+    <tr>
+      <td>correo_electronico</td>
+      <td>Correo electrónico del aspirante</td>
+    </tr>
+    <tr>
+      <td>cv</td>
+      <td>Currículum vitae del aspirante</td>
+    </tr>
+    <tr>
+      <td>estado</td>
+      <td>Estado del aspirante (aprobado, rechazado, pendiente)</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<!-- Contenido de la página 12 -->
+<div class="container mt-5">
+
+  <!-- Tabla de BD Evaluaciones -->
+  <h2 class="mt-4 mb-4">BD Evaluaciones</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre del Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>id_aspirante</td>
+        <td>Identificador único del candidato</td>
+      </tr>
+      <tr>
+        <td>id_eval</td>
+        <td>Identificador único de la evaluación</td>
+      </tr>
+      <tr>
+        <td>nombre</td>
+        <td>Nombre del proceso de evaluación</td>
+      </tr>
+      <tr>
+        <td>observaciones</td>
+        <td>Observaciones sobre la evaluación</td>
+      </tr>
+      <tr>
+        <td>resultados</td>
+        <td>Resultados de la evaluación</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- Contenido de la página 13 -->
+<div class="container mt-5">
+
+  <!-- Tabla de Registro de Empleados -->
+  <h2 class="mt-4 mb-4">Registro de Empleados</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Campo</th>
+        <th scope="col">Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>id_empleado</td>
+        <td>Identificador único del empleado</td>
+      </tr>
+      <tr>
+        <td>nombre</td>
+        <td>Nombre del empleado</td>
+      </tr>
+      <tr>
+        <td>apellido</td>
+        <td>Apellido del empleado</td>
+      </tr>
+      <tr>
+        <td>cargo</td>
+        <td>Cargo del empleado</td>
+      </tr>
+      <tr>
+        <td>departamento</td>
+        <td>Departamento en el que trabaja el empleado</td>
+      </tr>
+      <tr>
+        <td>fecha_ingreso</td>
+        <td>Fecha de ingreso del empleado a la empresa</td>
+      </tr>
+      <tr>
+        <td>salario</td>
+        <td>Salario del empleado</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+  <!-- Links a los directorios de Boostrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script para ocultar/mostrar la barra de navegación -->
+  <script src="../JS/navbar.js"></script>
+
+</body>
+</html>
