@@ -14,6 +14,17 @@
   <link rel="stylesheet" href="../CSS/planos.css">
   <link rel="icon" href="../Assets/icons/image.ico">
 
+  <style>
+    /* Estilos de la barra de navegación */
+    .navbar {
+      transition: top 0.5s, opacity 0.5s; /* Añade una transición suave de 0.5 segundos */
+    }
+
+    .navbar.hidden {
+      top: -56px; /* Mueve la barra de navegación completamente fuera de la vista */
+      opacity: 0; /* Hace que la barra de navegación sea completamente transparente cuando está oculta */
+    }
+  </style>
 </head>
 <body>
 
@@ -28,7 +39,7 @@
       </a>
 
       <!-- Subtítulo -->
-      <p class="navbar-subtitle animated-subtitle">DFD's</p>
+      <p class="navbar-subtitle animated-subtitle">Planos 3D</p>
 
       <!-- Enlaces en la derecha -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -49,11 +60,11 @@
               Navigation List
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="planos.html">Planos 3D</a>
               <a class="dropdown-item" href="actividades.html">Actividades</a>
               <a class="dropdown-item" href="sectores.html">Sectores</a>
               <a class="dropdown-item" href="cicloVida.html">Ciclo de Vida</a>
               <a class="dropdown-item" href="tablaDatos.html">Diccionario de Datos</a>
+              <a class="dropdown-item" href="dfds.html">DFDs</a>
               <a class="dropdown-item" href="distTrabajo.html">Distribucion del Trabajo</a>
               <a class="dropdown-item" href="cursogramas.html">Cursogramas</a>
               <a class="dropdown-item" href="seguridad.html">Seguridad</a>
@@ -66,10 +77,67 @@
     </div>
   </nav>
 
-    <!-- Contenido de la página 1 -->
-    <div class="container mt-5">
+  <!-- Contenido de la página 1 -->
+  <div class="container mt-5">
 
+    <!-- Sección 1 -->
+    <section class="row align-items-center">
+      <div class="col-md-6">
+        <div class="text-left">
+          <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+          <h3><span style="color: #9575CD;">D</span>FD<span style="color: #9575CD;">'</span>s</h3>
+          <p>Los Diagramas de Flujo de Datos (DFD) son una herramienta Clave para Optimizar Procesos en Empresas. Descubre cómo los DFDs ofrecen una visión visual y detallada del flujo de información, permitiendo el análisis, identificación de problemas y la planificación efectiva para la mejora continua en los sistemas empresariales.</p>
+          <p style="font-weight: bold; color: #9575CD;">Descubre más sobre nuestras instalaciones y servicios.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <img src="../Assets/images/section 5.gif" alt="Image Not Found" class="img-fluid">
+      </div>
+    </section>
+  </div>
+
+  <!-- Contenido de la página 2 -->
+  <div class="container mt-5">
+
+    <!-- Carrusel de Imágenes -->
+    <div id="imageCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Assets/dfd/nivel0.jpg" class="d-block w-100" alt="Primera Imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="../Assets/dfd/nivel1.jpg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="../Assets/dfd/nivel2.jpg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../Assets/dfd/nivel3.jpg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../Assets/dfd/nivel4.jpg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../Assets/dfd/nivel5.jpg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../Assets/dfd/nivel6.jpg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../Assets/dfd/nivel7.jpg" class="d-block w-100" alt="Segunda Imagen">
+            </div>
+        </div>
+        <!-- Controles del carrusel -->
+        <a class="carousel-control-prev" href="#imageCarousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
     </div>
+  </div>
 
   <!-- Links a los directorios de Boostrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
