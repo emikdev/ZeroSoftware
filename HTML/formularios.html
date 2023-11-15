@@ -66,10 +66,516 @@
     </div>
   </nav>
 
-    <!-- Contenido de la página 1 -->
-    <div class="container mt-5">
+<!-- Contenido de la página -->
+<div class="container mt-5">
+  <!-- Sección 1 -->
+  <section class="row align-items-center">
+    <div class="col-md-12 ">
+      <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+      <h3><span style="color: #9575CD;">A</span>tencion al <span style="color: #9575CD;">C</span>liente</h3>
+      <br>
 
+        <h2 class="mb-4">Formulario de Pedido de Reunión</h2>
+      <form>
+        <!-- Campo de número de pedido -->
+        <div class="form-group">
+          <label for="numeroPedido">Número de Pedido</label>
+          <input type="text" class="form-control" id="numeroPedido" placeholder="Ingrese el número de pedido">
+        </div>
+
+        <!-- Campo de fecha -->
+        <div class="form-group">
+          <label for="fecha">Fecha</label>
+          <input type="date" class="form-control" id="fecha">
+        </div>
+
+        <!-- Campos de datos del cliente -->
+        <div class="form-group">
+          <label for="nombreCliente">Nombre del Cliente</label>
+          <input type="text" class="form-control" id="nombreCliente" placeholder="Nombre del cliente">
+        </div>
+        <div class="form-group">
+          <label for="emailCliente">Correo Electrónico del Cliente</label>
+          <input type="email" class="form-control" id="emailCliente" placeholder="Correo electrónico del cliente">
+        </div>
+
+        <!-- Campos de datos de la organización -->
+        <div class="form-group">
+          <label for="nombreOrganizacion">Nombre de la Organización</label>
+          <input type="text" class="form-control" id="nombreOrganizacion" placeholder="Nombre de la organización">
+        </div>
+        <div class="form-group">
+          <label for="direccionOrganizacion">Dirección de la Organización</label>
+          <input type="text" class="form-control" id="direccionOrganizacion" placeholder="Dirección de la organización">
+        </div>
+
+        <!-- Campo de fecha y hora para la reunión -->
+        <div class="form-group">
+          <label for="fechaHoraReunion">Fecha y Hora de la Reunión</label>
+          <input type="datetime-local" class="form-control" id="fechaHoraReunion">
+        </div>
+
+        <!-- Campo de descripción del software -->
+        <div class="form-group">
+          <label for="descripcionSoftware">Breve Descripción del Software a Desarrollar</label>
+          <textarea class="form-control" id="descripcionSoftware" rows="3" placeholder="Ingrese una breve descripción"></textarea>
+        </div>
+
+        <!-- Botón de enviar -->
+        <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+      </form>
+      
+      <br>
+
+        <h2 class="mb-4">Formulario de Pedido de Cotización</h2>
+      <form>
+        <!-- Campo de número de pedido -->
+        <div class="form-group">
+          <label for="numeroPedido">Número de Pedido</label>
+          <input type="text" class="form-control" id="numeroPedido" placeholder="Ingrese el número de pedido">
+        </div>
+
+        <!-- Campo de fecha -->
+        <div class="form-group">
+          <label for="fecha">Fecha</label>
+          <input type="date" class="form-control" id="fecha">
+        </div>
+
+        <!-- Campos de datos del cliente -->
+        <div class="form-group">
+          <label for="nombreCliente">Nombre del Cliente</label>
+          <input type="text" class="form-control" id="nombreCliente" placeholder="Nombre del cliente">
+        </div>
+        <div class="form-group">
+          <label for="emailCliente">Correo Electrónico del Cliente</label>
+          <input type="email" class="form-control" id="emailCliente" placeholder="Correo electrónico del cliente">
+        </div>
+
+        <!-- Campos de datos de la organización -->
+        <div class="form-group">
+          <label for="nombreOrganizacion">Nombre de la Organización</label>
+          <input type="text" class="form-control" id="nombreOrganizacion" placeholder="Nombre de la organización">
+        </div>
+        <div class="form-group">
+          <label for="direccionOrganizacion">Dirección de la Organización</label>
+          <input type="text" class="form-control" id="direccionOrganizacion" placeholder="Dirección de la organización">
+        </div>
+
+        <!-- Campo de descripción detallada del proyecto -->
+        <div class="form-group">
+          <label for="descripcionProyecto">Descripción Detallada del Proyecto</label>
+          <textarea class="form-control" id="descripcionProyecto" rows="5" placeholder="Ingrese una descripción detallada del proyecto"></textarea>
+        </div>
+
+        <!-- Campo de archivos multimedia de referencia -->
+        <div class="form-group">
+          <label for="archivosReferencia">Archivos Multimedia de Referencia</label>
+          <input type="file" class="form-control-file" id="archivosReferencia" multiple>
+          <small id="archivosReferenciaHelp" class="form-text text-muted">Seleccione archivos multimedia como guía para el desarrollo del proyecto.</small>
+        </div>
+
+        <!-- Botón de enviar -->
+        <button type="submit" class="btn btn-primary">Enviar Cotización</button>
+      </form>
     </div>
+  </section>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">A</span>dministracion de <span style="color: #9575CD;">P</span>royectos</h3>
+  <br>
+
+  <h2 class="mb-4">Cotizacion</h2>
+  <form>
+    <!-- Campos de datos del cliente -->
+    <div class="form-group">
+      <label for="nombreCliente">Nombre del Cliente</label>
+      <input type="text" class="form-control" id="nombreCliente" placeholder="Nombre del cliente">
+    </div>
+    <div class="form-group">
+      <label for="emailCliente">Correo Electrónico del Cliente</label>
+      <input type="email" class="form-control" id="emailCliente" placeholder="Correo electrónico del cliente">
+    </div>
+
+    <!-- Campos de datos de la organización -->
+    <div class="form-group">
+      <label for="nombreOrganizacion">Nombre de la Organización</label>
+      <input type="text" class="form-control" id="nombreOrganizacion" placeholder="Nombre de la organización">
+    </div>
+    <div class="form-group">
+      <label for="direccionOrganizacion">Dirección de la Organización</label>
+      <input type="text" class="form-control" id="direccionOrganizacion" placeholder="Dirección de la organización">
+    </div>
+
+    <!-- Campo de número de cotización -->
+    <div class="form-group">
+      <label for="numeroCotizacion">Número de Cotización</label>
+      <input type="text" class="form-control" id="numeroCotizacion" placeholder="Ingrese el número de cotización">
+    </div>
+
+    <!-- Campo de monto -->
+    <div class="form-group">
+      <label for="monto">Monto</label>
+      <input type="text" class="form-control" id="monto" placeholder="Ingrese el monto">
+    </div>
+
+    <!-- Campo de fecha de inicio del proyecto -->
+    <div class="form-group">
+      <label for="fechaInicio">Fecha de Inicio del Proyecto</label>
+      <input type="date" class="form-control" id="fechaInicio">
+    </div>
+
+    <!-- Campo de fecha estimada de finalización -->
+    <div class="form-group">
+      <label for="fechaFinEstimada">Fecha Estimada de Finalización</label>
+      <input type="date" class="form-control" id="fechaFinEstimada">
+    </div>
+
+    <!-- Campo de horas estimadas del proyecto -->
+    <div class="form-group">
+      <label for="horasProyecto">Horas Estimadas del Proyecto</label>
+      <input type="text" class="form-control" id="horasProyecto" placeholder="Ingrese las horas estimadas">
+    </div>
+
+    <!-- Campo de detalles -->
+    <div class="form-group">
+      <label for="detalles">Detalles</label>
+      <textarea class="form-control" id="detalles" rows="5" placeholder="Ingrese detalles adicionales"></textarea>
+    </div>
+
+    <!-- Botón de enviar respuesta -->
+    <button type="submit" class="btn btn-primary">Enviar Respuesta</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">M</span>antenimiento</h3>
+  <br>
+
+  <h2 class="mb-4">Interfaz de Pedido de Compra</h2>
+  <form>
+    <!-- Campo de número de pedido -->
+    <div class="form-group">
+      <label for="numeroPedido">Número de Pedido</label>
+      <input type="text" class="form-control" id="numeroPedido" placeholder="Ingrese el número de pedido">
+    </div>
+
+    <!-- Campo de fecha -->
+    <div class="form-group">
+      <label for="fecha">Fecha</label>
+      <input type="date" class="form-control" id="fecha">
+    </div>
+
+    <!-- Campo de producto -->
+    <div class="form-group">
+      <label for="producto">Producto</label>
+      <input type="text" class="form-control" id="producto" placeholder="Ingrese el nombre del producto">
+    </div>
+
+    <!-- Campo de cantidad -->
+    <div class="form-group">
+      <label for="cantidad">Cantidad</label>
+      <input type="text" class="form-control" id="cantidad" placeholder="Ingrese la cantidad">
+    </div>
+
+    <!-- Campo de monto por unidad -->
+    <div class="form-group">
+      <label for="montoPorUnidad">Monto por Unidad</label>
+      <input type="text" class="form-control" id="montoPorUnidad" placeholder="Ingrese el monto por unidad">
+    </div>
+
+    <!-- Botón de enviar pedido de compra -->
+    <button type="submit" class="btn btn-primary">Enviar Pedido de Compra</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">A</span>dministracion de <span style="color: #9575CD;">C</span>apitales</h3>
+  <br>
+
+  <h2 class="mb-4">Interfaz de Autorización de Compra</h2>
+  <form>
+    <!-- Campo de número de respuesta -->
+    <div class="form-group">
+      <label for="numeroRespuesta">Número de Respuesta</label>
+      <input type="text" class="form-control" id="numeroRespuesta" placeholder="Ingrese el número de respuesta">
+    </div>
+
+    <!-- Campo de fecha -->
+    <div class="form-group">
+      <label for="fecha">Fecha</label>
+      <input type="date" class="form-control" id="fecha">
+    </div>
+
+    <!-- Campo de número de pedido de autorización -->
+    <div class="form-group">
+      <label for="numeroPedidoAutorizacion">Número de Pedido de Autorización</label>
+      <input type="text" class="form-control" id="numeroPedidoAutorizacion" placeholder="Ingrese el número de pedido de autorización">
+    </div>
+
+    <!-- Campo de selección de autorización o denegación -->
+    <div class="form-group">
+      <label for="selectAutorizacion">Autorización/Denegación</label>
+      <select class="form-control" id="selectAutorizacion">
+        <option value="autorizacion">Autorización</option>
+        <option value="denegacion">Denegación</option>
+      </select>
+    </div>
+
+    <!-- Campo de descripción -->
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <textarea class="form-control" id="descripcion" rows="5" placeholder="Ingrese una descripción"></textarea>
+    </div>
+
+    <!-- Botón de enviar autorización de compra -->
+    <button type="submit" class="btn btn-primary">Enviar Autorización de Compra</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">D</span>esarrollo</h3>
+  <br>
+
+  <h2 class="mb-4">Interfaz de Comunicación con Administración de Proyectos</h2>
+  <form>
+    <!-- Campo de número de reporte -->
+    <div class="form-group">
+      <label for="numeroReporte">Número de Reporte</label>
+      <input type="text" class="form-control" id="numeroReporte" placeholder="Ingrese el número de reporte">
+    </div>
+
+    <!-- Campo de fecha -->
+    <div class="form-group">
+      <label for="fecha">Fecha</label>
+      <input type="date" class="form-control" id="fecha">
+    </div>
+
+    <!-- Campo de número de proyecto -->
+    <div class="form-group">
+      <label for="numeroProyecto">Número de Proyecto</label>
+      <input type="text" class="form-control" id="numeroProyecto" placeholder="Ingrese el número de proyecto">
+    </div>
+
+    <!-- Campo de nombre del proyecto -->
+    <div class="form-group">
+      <label for="nombreProyecto">Nombre del Proyecto</label>
+      <input type="text" class="form-control" id="nombreProyecto" placeholder="Ingrese el nombre del proyecto">
+    </div>
+
+    <!-- Campo de descripción -->
+    <div class="form-group">
+      <label for="descripcionProyecto">Descripción del progreso</label>
+      <textarea class="form-control" id="descripcionProyecto" rows="5" placeholder="Ingrese una descripción del progreso"></textarea>
+    </div>
+
+    <!-- Botón de enviar comunicación con administración de proyectos -->
+    <button type="submit" class="btn btn-primary">Enviar Comunicación</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">S</span>eguridad</h3>
+  <br>
+
+  <h2 class="mb-4">Interfaz de Comunicado de Parches</h2>
+  <form>
+    <!-- Campo de número de comunicado -->
+    <div class="form-group">
+      <label for="numeroComunicado">Número de Comunicado</label>
+      <input type="text" class="form-control" id="numeroComunicado" placeholder="Ingrese el número de comunicado">
+    </div>
+
+    <!-- Campo de fecha -->
+    <div class="form-group">
+      <label for="fecha">Fecha</label>
+      <input type="date" class="form-control" id="fecha">
+    </div>
+
+    <!-- Campo de número de proyecto -->
+    <div class="form-group">
+      <label for="numeroProyecto">Número de Proyecto</label>
+      <input type="text" class="form-control" id="numeroProyecto" placeholder="Ingrese el número de proyecto">
+    </div>
+
+    <!-- Campo de nombre de parches -->
+    <div class="form-group">
+      <label for="nombreParches">Nombre del proyecto</label>
+      <input type="text" class="form-control" id="nombreParches" placeholder="Ingrese el nombre del proyecto">
+    </div>
+
+    <!-- Campo de descripción de parches -->
+    <div class="form-group">
+      <label for="descripcionParches">Descripción de Parches</label>
+      <textarea class="form-control" id="descripcionParches" rows="5" placeholder="Ingrese una descripción de los parches"></textarea>
+    </div>
+
+    <!-- Botón de enviar comunicación de parches -->
+    <button type="submit" class="btn btn-primary">Enviar Comunicación de Parches</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">R</span>ecursos <span style="color: #9575CD;">H</span>umanos</h3>
+  <br>
+
+  <h2 class="mb-4">Interfaz de Solicitud de Inscripción</h2>
+  <form>
+    <!-- Campo de número de solicitud -->
+    <div class="form-group">
+      <label for="numeroSolicitud">Número de Solicitud</label>
+      <input type="text" class="form-control" id="numeroSolicitud" placeholder="Ingrese el número de solicitud">
+    </div>
+
+    <!-- Campo de fecha de solicitud -->
+    <div class="form-group">
+      <label for="fechaSolicitud">Fecha de Solicitud</label>
+      <input type="date" class="form-control" id="fechaSolicitud">
+    </div>
+
+    <!-- Campo de nombre del aspirante -->
+    <div class="form-group">
+      <label for="nombreAspirante">Nombre del Aspirante</label>
+      <input type="text" class="form-control" id="nombreAspirante" placeholder="Ingrese el nombre del aspirante">
+    </div>
+
+    <!-- Campo de DNI del aspirante -->
+    <div class="form-group">
+      <label for="dniAspirante">DNI del Aspirante</label>
+      <input type="text" class="form-control" id="dniAspirante" placeholder="Ingrese el DNI del aspirante">
+    </div>
+
+    <!-- Campo de DNI del aspirante -->
+    <div class="form-group">
+      <label for="dniAspirante">Correo del Aspirante</label>
+      <input type="text" class="form-control" id="dniAspirante" placeholder="Ingrese el correo del aspirante">
+    </div>
+
+    <!-- Campo de puesto al que aspira -->
+    <div class="form-group">
+      <label for="puestoAspira">Puesto al que Aspira</label>
+      <input type="text" class="form-control" id="puestoAspira" placeholder="Ingrese el puesto al que aspira">
+    </div>
+
+    <!-- Botón de enviar solicitud de inscripción -->
+    <button type="submit" class="btn btn-primary">Enviar Solicitud de Inscripción</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">C</span>apacitacion</h3>
+  <br>
+
+  <h2 class="mb-4">Interfaz de Evaluación</h2>
+  <form>
+    <!-- Campo de número de respuesta -->
+    <div class="form-group">
+      <label for="numeroRespuesta">Número de Respuesta</label>
+      <input type="text" class="form-control" id="numeroRespuesta" placeholder="Ingrese el número de respuesta">
+    </div>
+
+    <!-- Campo de fecha -->
+    <div class="form-group">
+      <label for="fecha">Fecha</label>
+      <input type="date" class="form-control" id="fecha">
+    </div>
+
+    <!-- Campo de número de solicitud de inscripción -->
+    <div class="form-group">
+      <label for="numeroSolicitud">Número de Solicitud de Inscripción</label>
+      <input type="text" class="form-control" id="numeroSolicitud" placeholder="Ingrese el número de solicitud de inscripción">
+    </div>
+
+    <!-- Campo de nombre del aspirante -->
+    <div class="form-group">
+      <label for="nombreAspirante">Nombre del Aspirante</label>
+      <input type="text" class="form-control" id="nombreAspirante" placeholder="Ingrese el nombre del aspirante">
+    </div>
+
+    <!-- Campo de DNI del aspirante -->
+    <div class="form-group">
+      <label for="dniAspirante">DNI del Aspirante</label>
+      <input type="text" class="form-control" id="dniAspirante" placeholder="Ingrese el DNI del aspirante">
+    </div>
+
+    <!-- Campo de puesto al que aspira -->
+    <div class="form-group">
+      <label for="puestoAspira">Puesto al que Aspira</label>
+      <input type="text" class="form-control" id="puestoAspira" placeholder="Ingrese el puesto al que aspira">
+    </div>
+
+    <!-- Campo de fecha de evaluación -->
+    <div class="form-group">
+      <label for="fechaEvaluacion">Fecha de Evaluación</label>
+      <input type="date" class="form-control" id="fechaEvaluacion">
+    </div>
+
+    <!-- Botón de enviar evaluación -->
+    <button type="submit" class="btn btn-primary">Enviar Evaluación</button>
+  </form>
+</div>
+
+<div class="container mt-5">
+  <h2><span style="color: #6F42C1;">Zero</span>Software</h2>
+  <h3><span style="color: #9575CD;">A</span>dministracion de <span style="color: #9575CD;">P</span>royectos</h3>
+  <br>
+
+  <h2 class="mb-4">Interfaz de Solicitud de Capacitación</h2>
+  <form>
+    <!-- Campo de número de solicitud -->
+    <div class="form-group">
+      <label for="numeroSolicitud">Número de Solicitud</label>
+      <input type="text" class="form-control" id="numeroSolicitud" placeholder="Ingrese el número de solicitud">
+    </div>
+
+    <!-- Campo de fecha de solicitud -->
+    <div class="form-group">
+      <label for="fechaSolicitud">Fecha de Solicitud</label>
+      <input type="date" class="form-control" id="fechaSolicitud">
+    </div>
+
+    <!-- Campo de tema de capacitación -->
+    <div class="form-group">
+      <label for="temaCapacitacion">Tema de Capacitación</label>
+      <input type="text" class="form-control" id="temaCapacitacion" placeholder="Ingrese el tema de capacitación">
+    </div>
+
+    <!-- Campo de descripción -->
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <textarea class="form-control" id="descripcion" rows="5" placeholder="Ingrese una descripción"></textarea>
+    </div>
+
+    <!-- Campo de fecha de inicio -->
+    <div class="form-group">
+      <label for="fechaInicio">Fecha de Inicio</label>
+      <input type="date" class="form-control" id="fechaInicio">
+    </div>
+
+    <!-- Campo de fecha de finalización -->
+    <div class="form-group">
+      <label for="fechaFinalizacion">Fecha de Finalización</label>
+      <input type="date" class="form-control" id="fechaFinalizacion">
+    </div>
+
+    <!-- Campo de lista de empleados -->
+    <div class="form-group">
+      <label for="listaEmpleados">Lista de Empleados</label>
+      <textarea class="form-control" id="listaEmpleados" rows="3" placeholder="Ingrese la lista de empleados"></textarea>
+      <small id="listaEmpleadosHelp" class="form-text text-muted">Ingrese los nombres de los empleados separados por comas.</small>
+    </div>
+
+    <!-- Botón de enviar solicitud de capacitación -->
+    <button type="submit" class="btn btn-primary">Enviar Solicitud de Capacitación</button>
+  </form>
+</div>
 
   <!-- Links a los directorios de Boostrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
